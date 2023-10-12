@@ -1,0 +1,154 @@
+/* --------------- Media Query ---------------*/
+@media screen and (max-width: 1215px) {
+  /* body {
+      background-color: lightgreen;
+    } */
+
+  .navbar .right {
+    display: none;
+  }
+  .welcome-box {
+    height: 40vw;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxes .c-box {
+    margin: 0 8px;
+  }
+  .container {
+    padding: 8px;
+    width: 90%;
+  }
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  /*------------------- Responsive Navbar -----------------*/
+  .navbar .right {
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.934);
+    text-align: center;
+    flex-direction: column;
+    padding: 12px;
+    display: none;
+  }
+  .navbar .right.open {
+    display: block;
+  }
+  .navbar .right .nav-menu {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .navbar .right .nav-menu li {
+    padding: 8px;
+  }
+  .navbar .right .nav-menu li a {
+    color: white;
+  }
+  .toggle {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  .toggle::before,
+  .toggle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #031d46;
+    transition: all 0.2s ease;
+  }
+  .toggle::before {
+    transform: translateY(-10px);
+    box-shadow: 0 10px #031d46;
+  }
+  .toggle::after {
+    transform: translateY(10px);
+  }
+  .navbar.active .toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  .navbar.active .toggle::after {
+    transform: rotate(-45deg);
+  }
+}
+
+/* ---------------------------------------------------------------*/
+
+@media screen and (max-width: 581px) {
+  /* body {
+      background-color: lightcoral;
+    } */
+  .welcome-box {
+    height: 45vw;
+  }
+  .navbar .logo {
+    font-size: 18px;
+  }
+  .navbar .logo img {
+    width: 27px;
+  }
+  .contactInfo {
+    padding: 12px;
+  }
+  .contactInfo ul li {
+    padding: 5px;
+  }
+  .contactInfo ul li .icon {
+    margin: 0 3px;
+  }
+  .contactInfo .contact {
+    font-size: 10px;
+  }
+  .box .why-choose {
+    width: 300px;
+  }
+  .box .why-choose h3 {
+    font-size: 30px;
+  }
+  .box .why-choose p {
+    font-size: 15px;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .boxes .c-box {
+    margin: 12px 0;
+  }
+  .footer {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  .navbar {
+    padding: 0 10px;
+  }
+  .container {
+    padding: 8px 12px;
+    width: 100%;
+  }
+  .button {
+    padding: 5px;
+  }
+  .page-title {
+    font-size: 1.75rem;
+  }
+  select {
+    width: 80%;
+  }
+}

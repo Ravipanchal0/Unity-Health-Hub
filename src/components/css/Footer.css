@@ -1,0 +1,23 @@
+.footer {
+  /* border: 2px solid black; */
+  justify-content: space-between;
+  padding: 0 70px;
+  width: 100%;
+  height: 7rem;
+  background-color: var(--footer-bg);
+  color: #ffffff;
+  font-size: 17px;
+  font-family: var(--open-sans-font);
+}
+.footer-icon ul li {
+  list-style: none;
+  padding: 0px 8px;
+}
+.footer-icon ul li a {
+  color: white;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+.footer-icon ul li a:hover {
+  color: #c9d0ea;
+}

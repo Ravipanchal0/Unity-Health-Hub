@@ -1,0 +1,88 @@
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+  padding: 0 70px;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.contactInfo ul li {
+  list-style: none;
+  padding: 5px 8px;
+}
+
+.contactInfo ul li .icon {
+  color: var(--icon);
+  margin: 0px 7px;
+}
+.contact {
+  color: var(--color-font);
+  font-family: var(--open-sans-font);
+  font-size: 14px;
+}
+.contactInfo .socialmedia li a {
+  color: var(--icon);
+}
+.socialmedia li a:hover {
+  color: #337abc;
+}
+
+#h-email:hover {
+  cursor: pointer;
+  color: var(--bs-blue);
+}
+.navbar {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 0 70px 0 85px;
+}
+.navbar .logo {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #2c4964;
+  /* border: 2px solid black; */
+}
+.navbar .right {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .right .nav-menu {
+  display: flex;
+  align-items: center;
+  font-family: var(--open-sans-font);
+}
+.navbar .right .nav-menu li {
+  list-style: none;
+  padding: 0 12px;
+  font-size: 1rem;
+}
+.navbar .right .nav-menu li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-font);
+  transition: all 0.3s;
+}
+.navbar .right .nav-menu li a:hover {
+  color: var(--bs-blue);
+}
+
+.navbar .right .nav-menu li a::before {
+  content: "";
+  position: absolute;
+  background: var(--bs-blue);
+  height: 0;
+  width: 100%;
+  left: 0px;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+.navbar .right .nav-menu li a:hover::before {
+  height: 1.5px;
+}

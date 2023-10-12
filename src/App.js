@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/js/Navbar";
+import Home from "./components/js/Home";
+import Footer from "./components/js/Footer";
+import AddDoctor from "./components/js/AddDoctor";
+import Addpatient from "./components/js/AddPatient";
+import AddDepartmanet from "./components/js/AddDepartmanet";
+import Department from "./components/js/Department";
+import Doctors from "./components/js/Doctors";
+import Patients from "./components/js/Patients";
 
 function App() {
+  function openNavbar() {
+    let navbar = document.querySelector(".navbar"),
+      rightbox = document.querySelector(".right");
+    navbar.classList.toggle("active");
+    rightbox.classList.toggle("open");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar openNav={openNavbar} />
+      <Home />
+      <AddDoctor />
+      <Addpatient />
+      <AddDepartmanet />
+      <Department />
+      <Doctors />
+      <Patients />
+      <Footer />
+    </>
   );
 }
 

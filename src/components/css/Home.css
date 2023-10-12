@@ -1,0 +1,84 @@
+:root {
+  --icon: #2068ac;
+  --bs-blue: #286fd6;
+  --color-font: rgb(85, 83, 83);
+  --btn-hover: #255cbb;
+  --main-color: #2b3c57;
+  --box: #3784f7;
+  --open-sans-font: "Open Sans", sans-serif;
+  --footer-bg: #031d46;
+}
+.welcome-box {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  height: 30vw;
+  width: 100%;
+  background: url(../img/newbg.avif) no-repeat center center/cover;
+}
+
+.heading {
+  /* border: 2px solid green; */
+  font-family: "Tilt Neon", cursive;
+  font-size: 4.55vw;
+  color: var(--main-color);
+}
+.slogan {
+  /* border: 2px solid orangered; */
+  font-family: "Alegreya", serif;
+  font-size: 2vw;
+  color: var(--main-color);
+  margin-left: 10px;
+}
+
+.box {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58px 70px;
+}
+.why-choose {
+  /* border: 2px solid var(--box); */
+  width: 400px;
+  background-color: var(--box);
+  color: white;
+  padding: 8px;
+  margin-bottom: 30px;
+  border-radius: 11px;
+  box-shadow: 1px 1px 5px 1px #a9a9a9;
+}
+.why-choose h3 {
+  font-size: 35px;
+  font-family: var(--open-sans-font);
+  padding-left: 10px;
+}
+.why-choose p {
+  font-family: "Poppins", sans-serif;
+  margin: 2px 10px;
+  padding: 2px;
+  text-align: justify;
+}
+
+.c-box {
+  color: var(--btn-hover);
+  flex-direction: column;
+  margin: 0 15px;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: white;
+  font-family: var(--open-sans-font);
+  font-weight: bold;
+  box-shadow: 1px 1px 8px 0px #a9a9a9;
+  text-align: center;
+}
+.c-box:hover {
+  color: #4084e9;
+}
+.c-icon {
+  font-size: 40px;
+  margin: 10px 8px;
+}
