@@ -4,9 +4,6 @@ import Footer from "./components/js/Footer";
 import AddDoctor from "./components/js/AddDoctor";
 import Addpatient from "./components/js/AddPatient";
 import AddDepartmanet from "./components/js/AddDepartmanet";
-import Department from "./components/js/Department";
-import Doctors from "./components/js/Doctors";
-import Patients from "./components/js/Patients";
 
 function App() {
   function openNavbar() {
