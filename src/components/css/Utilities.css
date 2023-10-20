@@ -7,9 +7,9 @@
   --btn-hover: #255cbb;
   --main-color: #2b3c57;
   --box: #3784f7;
-  --open-sans-font: "Open Sans", sans-serif;
   --bottom-border: rgb(235, 235, 235);
   --footer-bg: #031d46;
+  --open-sans-font: "Open Sans", sans-serif;
 }
 * {
   margin: 0;
