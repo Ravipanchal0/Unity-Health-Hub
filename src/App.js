@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./components/js/Navbar";
 import Home from "./components/js/Home";
 import Footer from "./components/js/Footer";
@@ -23,9 +22,6 @@ function App() {
       <AddDoctor />
       <Addpatient />
       <AddDepartmanet />
-      <Department />
-      <Doctors />
-      <Patients />
       <Footer />
     </>
   );

@@ -131,10 +131,7 @@
   .boxes .c-box {
     margin: 12px 0;
   }
-  .footer {
-    padding: 0 20px;
-    font-size: 14px;
-  }
+
   .navbar {
     padding: 0 10px;
   }
@@ -150,5 +147,11 @@
   }
   select {
     width: 80%;
+  }
+  #footer {
+    padding: 0 20px;
+  }
+  .footer p {
+    font-size: 13px;
   }
 }

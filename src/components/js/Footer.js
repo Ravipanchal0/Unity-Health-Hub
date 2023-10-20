@@ -6,7 +6,7 @@ import "../css/MediaQuery.css";
 function Footer() {
   return (
     <>
-      <footer className="footer centerItem">
+      <footer className="footer centerItem" id="footer">
         <div className="copyright">
           <p>
             &copy; Copyright <strong>Unity Health Hub</strong>. All Right Reserved
