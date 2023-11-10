@@ -38,7 +38,7 @@ function Navbar(props) {
       <nav className="navbar">
         <p className="logo">
           <Link to="/" className="centerItem">
-            <img src={companyLogo} style={{ marginRight: "8px", width: "40px" }} /> Unity Health Hub
+            <img src={companyLogo} alt="UnityHealthHub" style={{ marginRight: "8px", width: "40px" }} /> Unity Health Hub
           </Link>
         </p>
         <div className="toggle" onClick={props.openNav}></div>
