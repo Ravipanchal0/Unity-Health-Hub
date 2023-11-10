@@ -157,4 +157,16 @@
   .search-btn {
     padding: 5px 10px;
   }
+  .toggle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toggle::before {
+    transform: translateY(-8px);
+    box-shadow: 0 8px #031d46;
+  }
+  .toggle::after {
+    transform: translateY(8px);
+  }
 }
