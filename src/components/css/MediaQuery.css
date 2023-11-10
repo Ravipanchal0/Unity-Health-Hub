@@ -30,7 +30,7 @@
   /*------------------- Responsive Navbar -----------------*/
   .navbar .right {
     position: absolute;
-    top: 2.4rem;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(85, 85, 85, 0.934);
@@ -153,5 +153,8 @@
   }
   .footer p {
     font-size: 13px;
+  }
+  .search-btn {
+    padding: 5px 10px;
   }
 }

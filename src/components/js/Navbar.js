@@ -3,6 +3,7 @@ import "../css/Navbar.css";
 import "../css/Utilities.css";
 import "../css/MediaQuery.css";
 import companyLogo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -18,46 +19,48 @@ function Navbar(props) {
         </ul>
         <ul className="socialmedia centerItem">
           <li>
-            <a href="#">
+            <Link to="/">
               <i className="fa-brands fa-twitter"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/">
               <i className="fa-brands fa-facebook"></i>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/">
               <i className="fa-brands fa-square-instagram"></i>
-            </a>
+            </Link>
           </li>
         </ul>
       </header>
       <nav className="navbar">
-        <p className="logo centerItem">
-          <img src={companyLogo} style={{ marginRight: "8px", width: "40px" }} /> Unity Health Hub
+        <p className="logo">
+          <Link to="/" className="centerItem">
+            <img src={companyLogo} style={{ marginRight: "8px", width: "40px" }} /> Unity Health Hub
+          </Link>
         </p>
         <div className="toggle" onClick={props.openNav}></div>
         <div className="right">
           <ul className="nav-menu">
             <li>
-              <a href="MyHospital.html">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#">Department</a>
+              <Link to="/Department">Departments</Link>
             </li>
             <li>
-              <a href="#">Doctors</a>
+              <Link to="/Doctors">Doctors</Link>
             </li>
             <li>
-              <a href="#">Patients</a>
+              <Link to="/Patients">Patients</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <button className="btn-apoimt">Make an Appointment</button>

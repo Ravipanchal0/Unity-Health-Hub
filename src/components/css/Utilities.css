@@ -31,15 +31,18 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+  /* border: 2px solid red; */
 }
 .page-title {
   border-bottom: 5px solid var(--main-color);
-  border-radius: 12px;
+  border-radius: 5px;
   font-family: "Tilt Neon", cursive;
   font-size: 3rem;
   color: var(--main-color);
   margin: 25px 0;
-  padding: 5px 15px;
+  padding: 2px 12px;
   position: relative;
   width: fit-content;
   display: flex;
@@ -163,6 +166,29 @@ select {
 
 .options {
   padding: 8px 5px;
+}
+.para {
+  text-align: justify;
+  line-height: 20px;
+}
+/* ---------------table Design --------------*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+th {
+  font-size: 19px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 /* ------------- Scrollbar Design ----------------*/

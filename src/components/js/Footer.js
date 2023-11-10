@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Footer.css";
 import "../css/Utilities.css";
 import "../css/MediaQuery.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -15,19 +16,19 @@ function Footer() {
         <div className="footer-icon">
           <ul className="centerItem">
             <li>
-              <a href="#">
+              <Link to="#">
                 <i className="fa-brands fa-twitter"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <i className="fa-brands fa-facebook"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <i className="fa-brands fa-instagram"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

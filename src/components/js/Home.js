@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Home.css";
 import "../css/Utilities.css";
 import "../css/MediaQuery.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -22,15 +23,15 @@ function Home() {
             </p>
           </div>
           <div className="boxes centerItem">
-            <a href="addDoctor" className="c-box centerItem" id="addDoctor">
+            <Link to="/addDoctor" className="c-box centerItem" id="addDoctor">
               <i className="c-icon fa-solid fa-user-doctor"></i>Add a Doctor
-            </a>
-            <a href="addDepartment" className="c-box centerItem" id="addDepartment">
+            </Link>
+            <Link to="/addDepartment" className="c-box centerItem" id="addDepartment">
               <i className="c-icon fa-solid fa-building"></i>Add a Department
-            </a>
-            <a href="addPatients" className="c-box centerItem" id="addPatient">
+            </Link>
+            <Link to="/addPatients" className="c-box centerItem" id="addPatient">
               <i className="c-icon fa-solid fa-bed"></i>Add a Patient
-            </a>
+            </Link>
           </div>
         </div>
       </main>

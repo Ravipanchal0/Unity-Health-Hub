@@ -3,9 +3,62 @@ import Search from "./Search";
 
 function Doctors() {
   return (
-    <div>
-      <h3>Our Doctors</h3>
-      <Search search="Enter Doctor id..." />
+    <div className="main-box" style={{ minHeight: "100vh" }}>
+      <h3 className="page-title">Doctors</h3>
+      <Search search="Enter Doctor id/name" />
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor Id</th>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Visiting Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+
+          <tr>
+            <td>10203</td>
+            <td>Maria Anders</td>
+            <td>Bone Specialist</td>
+            <td>Morning</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

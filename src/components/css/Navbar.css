@@ -5,6 +5,11 @@
   height: 2.5rem;
   padding: 0 70px;
   border-bottom: 2px solid #f5f5f5;
+  z-index: 100;
+  box-shadow: 0 2px 2px 0px gray;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
 .contactInfo ul li {
@@ -39,6 +44,11 @@
   justify-content: space-between;
   height: 4.5rem;
   padding: 0 70px 0 85px;
+  z-index: 100;
+  box-shadow: 0 2px 2px 0px #d2dff1;
+  background-color: white;
+  position: sticky;
+  top: 2.5rem;
 }
 .navbar .logo {
   font-family: "Ubuntu", sans-serif;
@@ -47,6 +57,9 @@
   font-weight: 900;
   color: #2c4964;
   /* border: 2px solid black; */
+}
+.navbar .logo a {
+  text-decoration: none;
 }
 .navbar .right {
   /* border: 2px solid black; */
