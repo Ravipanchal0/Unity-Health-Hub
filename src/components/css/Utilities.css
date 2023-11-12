@@ -243,3 +243,18 @@ tr:nth-child(even) {
   height: 20px;
   margin-right: 8px;
 }
+
+.navbar .right .nav-menu li .isActive {
+  color: var(--bs-blue);
+}
+
+.navbar .right .nav-menu li .isActive::before {
+  content: "";
+  position: absolute;
+  background: var(--bs-blue);
+  height: 1.5px;
+  width: 100%;
+  left: 0px;
+  bottom: -5px;
+  transition: all 0.3s;
+}

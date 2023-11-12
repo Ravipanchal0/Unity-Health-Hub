@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Contact = () => {
+const Contact = ({ setProgress }) => {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
+  }, []);
   return (
     <div className="main-box" style={{ minHeight: "100vh" }}>
       <h1 className="page-title">Contact Us</h1>

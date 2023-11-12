@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/MediaQuery.css";
 
-function Addpatient() {
+function Addpatient({ setProgress }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
+  }, []);
   return (
     <>
       <main id="addPatients">

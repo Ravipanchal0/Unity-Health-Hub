@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Search from "./Search";
 
-function Doctors() {
+function Doctors({ setProgress }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
+  }, []);
   return (
     <div className="main-box" style={{ minHeight: "100vh" }}>
       <h3 className="page-title">Doctors</h3>

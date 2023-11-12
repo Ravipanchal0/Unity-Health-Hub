@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Home.css";
 import "../css/Utilities.css";
 import "../css/MediaQuery.css";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home({ setProgress }) {
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
+  }, []);
   return (
     <>
       <main>

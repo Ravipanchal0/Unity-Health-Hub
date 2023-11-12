@@ -3,7 +3,7 @@ import "../css/Navbar.css";
 import "../css/Utilities.css";
 import "../css/MediaQuery.css";
 import companyLogo from "../img/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -19,48 +19,60 @@ function Navbar(props) {
         </ul>
         <ul className="socialmedia centerItem">
           <li>
-            <Link to="/">
+            <NavLink to="/">
               <i className="fa-brands fa-twitter"></i>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/">
+            <NavLink to="/">
               <i className="fa-brands fa-facebook"></i>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/">
+            <NavLink to="/">
               <i className="fa-brands fa-square-instagram"></i>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </header>
       <nav className="navbar">
         <p className="logo">
-          <Link to="/" className="centerItem">
+          <NavLink to="/" className="centerItem">
             <img src={companyLogo} alt="UnityHealthHub" style={{ marginRight: "8px", width: "40px" }} /> Unity Health Hub
-          </Link>
+          </NavLink>
         </p>
         <div className="toggle" onClick={props.openNav}></div>
         <div className="right">
           <ul className="nav-menu">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/">
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/about">
+                About
+              </NavLink>
             </li>
             <li>
-              <Link to="/Department">Departments</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/Department">
+                Departments
+              </NavLink>
             </li>
             <li>
-              <Link to="/Doctors">Doctors</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/Doctors">
+                Doctors
+              </NavLink>
             </li>
             <li>
-              <Link to="/Patients">Patients</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/Patients">
+                Patients
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink className={({ isActive }) => (isActive ? "isActive" : "")} to="/contact">
+                Contact
+              </NavLink>
             </li>
           </ul>
           <button className="btn-apoimt">Make an Appointment</button>
