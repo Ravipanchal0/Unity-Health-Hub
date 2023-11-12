@@ -7,7 +7,7 @@ function Doctors({ setProgress }) {
     setTimeout(() => {
       setProgress(100);
     }, 100);
-  }, []);
+  }, [setProgress]);
   return (
     <div className="main-box" style={{ minHeight: "100vh" }}>
       <h3 className="page-title">Doctors</h3>

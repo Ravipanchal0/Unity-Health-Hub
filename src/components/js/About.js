@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 
-const About = (props) => {
+const About = ({ setProgress }) => {
   useEffect(() => {
-    props.setProgress(40);
+    setProgress(40);
     setTimeout(() => {
-      props.setProgress(100);
+      setProgress(100);
     }, 100);
-  }, []);
+  }, [setProgress]);
   return (
     <div className="main-box" style={{ minHeight: "100vh" }}>
       <h1 className="page-title">About Us</h1>

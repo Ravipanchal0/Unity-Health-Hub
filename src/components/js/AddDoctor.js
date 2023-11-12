@@ -7,7 +7,7 @@ function AddDoctor({ setProgress }) {
     setTimeout(() => {
       setProgress(100);
     }, 100);
-  }, []);
+  }, [setProgress]);
   return (
     <>
       <main id="addDorctor">

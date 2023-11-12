@@ -6,7 +6,7 @@ const Contact = ({ setProgress }) => {
     setTimeout(() => {
       setProgress(100);
     }, 100);
-  }, []);
+  }, [setProgress]);
   return (
     <div className="main-box" style={{ minHeight: "100vh" }}>
       <h1 className="page-title">Contact Us</h1>

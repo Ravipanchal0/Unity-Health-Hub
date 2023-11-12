@@ -10,7 +10,7 @@ function Home({ setProgress }) {
     setTimeout(() => {
       setProgress(100);
     }, 100);
-  }, []);
+  }, [setProgress]);
   return (
     <>
       <main>
